@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reserva tu Vuelo"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad de Origen"
+                android:textColor="#757575" />
+
+            <EditText
+                android:id="@+id/et_origen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: Madrid"
+                android:inputType="text"
+                android:drawableStart="@android:drawable/ic_menu_directions"
+                android:drawablePadding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciudad de Destino"
+                android:textColor="#757575" />
+
+            <EditText
+                android:id="@+id/et_destino"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Ej: Barcelona"
+                android:inputType="text"
+                android:drawableStart="@android:drawable/ic_menu_send"
+                android:drawablePadding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha del Viaje"
+                android:textColor="#757575" />
+
+            <EditText
+                android:id="@+id/et_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="DD/MM/AAAA"
+                android:inputType="date"
+                android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                android:drawablePadding="10dp"
+                android:background="@android:drawable/editbox_background"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btn_confirmar_vuelo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Confirmar Reserva"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
